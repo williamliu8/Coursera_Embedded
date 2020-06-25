@@ -32,7 +32,7 @@ Please add PLATFORM=MSP432
 &nbsp;&nbsp;&nbsp;&nbsp;ENABLE:print some debug messages  
 &nbsp;&nbsp;&nbsp;&nbsp;else(default) : don't print debug messages  
   
-by useing: ./final.out  
+by using: ./final.out  
 You should see all test items pass.  
 
 Description:  
