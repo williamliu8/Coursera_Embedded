@@ -2,7 +2,8 @@ Course 1 Module 2 assessment
 Author:William Liu  
 Date:June 14 2020  
   
-Makefile usage:  
+under Linux  
+**useage of make**:  
 make [TARGET] [PLATFORM=Platform options]  
 &nbsp;&nbsp;TARGET:  
 &nbsp;&nbsp;&nbsp;&nbsp;<FILE>.o - to generate object file from c file  
@@ -18,23 +19,23 @@ Please add PLATFORM=MSP432
 Platform options:  
 &nbsp;&nbsp;HOST, MSP432  
   
-Description:  
+**Description:**  
 You will create a build system using the GNU tools, GCC and GNU Make.  
 This assignment will require you to compile multiple files, link them together and create a final output executable.  
 Some files will be provided for you, but you will need to support two platforms; the host environment and the target embedded system MSP432.  
 The host system will allow you to simulate software on a host platform.  
 The target system will be used in upcoming assignments as we begin to create our microcontroller applications.  
   
-After completing this assignment, you will be able to:  
+**After completing this assignment, you will be able to:**  
 Use GCC and GNU Make to create a command line build system.  
 Write a makefile that can natively and cross compile an application.  
 Generate preprocessor, assembly, object, dependency, executable, and map output files.  
   
-Implementation File Guidelines  
+**Implementation File Guidelines**  
 You will write a makefile that can compile multiple source files and support two platform targets.  
 You will be given a folder structure and a set of source files.  
   
-Files  
+**Files**  
 msp432p401r.lds - The linker file you are to use for linking  
 
 'src' folder : contains five source files (*.c)  
