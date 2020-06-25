@@ -1,8 +1,14 @@
 Course 1 Module 4 final assessment  
 Author:William Liu  
 Date:June 24 2020  
+  
+Under Linux  
+1.Change to Final directory  
+2.$make(please see the usage of make)  
+3.$./final.out  
+4.You should see all test items pass.  
 
-Make file usage:  
+**Usage of make:**  
 &nbsp;&nbsp;Use: make [TARGET] [PLATFORM=options] [PROJ=options] [VERB=options] [DEBUB=options]  
   
 &nbsp;&nbsp;TARGET:  
@@ -31,11 +37,8 @@ Please add PLATFORM=MSP432
 &nbsp;&nbsp;DEBUG options:  
 &nbsp;&nbsp;&nbsp;&nbsp;ENABLE:print some debug messages  
 &nbsp;&nbsp;&nbsp;&nbsp;else(default) : don't print debug messages  
-  
-by using: ./final.out  
-You should see all test items pass.  
-
-Description:  
+    
+**Description:**  
 You will get more experience with Git Version control  
 Writing more C-programming code  
 Integrating your code with your build system.  
@@ -43,12 +46,12 @@ You will reuse your version control repository and add some new c-programming fu
 You will test your code on your host machine, but your code should compile for both the target platform and host platform.  
 We will use the target platform in future assignments.  
   
-After completing this assignment, you will be able to:  
+**After completing this assignment, you will be able to:**  
 Incorporate a c-program application into your Make and GCC build system  
 Write c-program functions that manipulate memory  
 Execute and test your application by simulating it on the host machine  
   
-Implementation File Guidelines  
+**Implementation File Guidelines**  
 Makefile:  
 &nbsp;&nbsp;Modify to work properly with the new file structure and meet new requirements.  
   
@@ -66,8 +69,7 @@ stats.c/stats.h:
 &nbsp;&nbsp;the PRINTF macro defined in platform.h  
 
 memory.c/memory.h:  
-!!All operations need to be performed using pointer arithmetic, not array indexing  
-  
+***All operations need to be performed using pointer arithmetic, not array indexing***  
 &nbsp;&nbsp;uint8_t * my_memmove(uint8_t * src, uint8_t * dst, size_t length);  
 &nbsp;&nbsp;&nbsp;&nbsp;This function takes two byte pointers (one source and one destination) and a length of bytes to move from  
 &nbsp;&nbsp;&nbsp;&nbsp;the source location to the destination.  
@@ -103,8 +105,8 @@ memory.c/memory.h:
 &nbsp;&nbsp;&nbsp;&nbsp;Should free a dynamic memory allocation by providing the pointer src to the function  
   
 data.c/data.h:  
-!!All operations need to be performed using pointer arithmetic, not array indexing  
-!!You may not use any string functions or libraries  
+***All operations need to be performed using pointer arithmetic, not array indexing  
+You may not use any string functions or libraries***  
 &nbsp;&nbsp;uint8_t my_itoa(int32_t data, uint8_t * ptr, uint32_t base)  
 &nbsp;&nbsp;&nbsp;&nbsp;Integer-to-ASCII needs to convert data from a standard integer type into an ASCII string.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You should be able to support bases 2 to 16 by specifying the integer value of the base you wish to convert to (base).  
