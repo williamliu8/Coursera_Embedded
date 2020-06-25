@@ -23,4 +23,4 @@ Using a Texas Instruments MSP432 Development Kit you will:
 Configuring a variety of peripherals  
 Writing numerous programs,and see your work execute on your own embedded platform!  
 
-**I enjoy these 2 classes vary much, and have got certificates of these 2 classes with full grade.**
+**I enjoy these 2 classes vary much, and have got certificates of these 2 classes with full score.**
