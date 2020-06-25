@@ -3,7 +3,12 @@ Author:William Liu
 Date:June 14 2020  
   
 under Linux  
-**useage of make**:  
+1.change to C1M2 directory  
+2. $make(please see the usage of make)  
+3. $./c1m2.out  
+4. you should see the result  
+  
+**usage of make**:  
 make [TARGET] [PLATFORM=Platform options]  
 &nbsp;&nbsp;TARGET:  
 &nbsp;&nbsp;&nbsp;&nbsp;<FILE>.o - to generate object file from c file  
