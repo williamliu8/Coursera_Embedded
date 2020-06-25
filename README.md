@@ -1,6 +1,6 @@
-This Repository is for 3 assignments in a Coursera intermediate level course.
-Course Name:Introduction to Embedded Systems Software and Development Environments
-Offered by: Alex Fosdick, University of Colorado Boulder.
+This Repository is for 3 assignments in a Coursera intermediate level course.  
+Course Name:Introduction to Embedded Systems Software and Development Environments  
+Offered by: Alex Fosdick, University of Colorado Boulder.  
 
 About This Course:
 https://www.coursera.org/learn/introduction-embedded-systems
