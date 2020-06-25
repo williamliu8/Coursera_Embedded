@@ -2,19 +2,26 @@ Course 1 Module 1 assessment
 Author:William Liu  
 Date:June 10 2020  
 
-Description:  
+**Usage:**  
+Under Linux  
+1.Change to C1M1 directory  
+2.$ gcc -o c1m1.out  
+3.$ ./c1m1.out
+4.you will see the result  
+  
+**Description:**  
 You will create a simple application that performs statistical analytics on a dataset.  
 This assignment will help you get re-oriented with c-programming syntax and host machine compilation.  
 We begin by setting up a version control repository on your local machine.  
 You will then develop and test your code there.  
 When complete, you will upload a zip of your repository to Coursera.  
 
-After completing this assignment, you will be able to:  
+**After completing this assignment, you will be able to:**  
 Write a simple programming assignment that prints statistics to the command line using a variety of c-programming operators and features.  
 Perform Compilation with GCC and execute output files from the command line.  
 Use git Version control to create a repository to version control code.  
 
-Implementation File Guidelines - stats.c  
+**Implementation File Guidelines - stats.c**  
 You are to write a couple of functions that can analyze an array of unsigned char data items and report analytics on the maximum, minimum, mean, and median of the data set.  
 In addition, you will need to reorder this data set from large to small.  
 All statistics should be rounded down to the nearest integer.  
@@ -22,7 +29,7 @@ After analysis and sorting is done, you will need to print that data to the scre
 
 You will have to make at least 3 commit with git.  
 
-Files and functions:  
+**Files and functions:**  
 stats.c  
 &nbsp;&nbsp;main()  
 &nbsp;&nbsp;&nbsp;&nbsp;The main entry point of the program  
