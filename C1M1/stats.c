@@ -33,8 +33,11 @@
  */
 
 
-
+#ifndef __MSP432P401R__
 #include <stdio.h>
+#else
+#include "msp.h"
+#endif
 #include "stats.h"
 
 /* Size of the Data Set */
@@ -50,12 +53,18 @@ void main() {
 
   BYTE mean,median,min,max;
   sort_array(test,SIZE);
+#ifndef __MSP432P401R__
   print_array(test,SIZE);
+#endif
   max = find_maximum(test,SIZE);
   min = find_minimum(test,SIZE);
   mean = find_mean(test,SIZE);
   median = find_median(test,SIZE);
+#ifndef __MSP432P401R__
   print_statistics(min,max,mean,median);
+#else
+  __NOP();
+#endif
 }
 
 /*
@@ -87,7 +96,7 @@ void sort_array(BYTE *array,BYTE length){
     }
   }
 }
-
+#ifndef __MSP432P401R__
 void print_statistics(BYTE min,BYTE max,BYTE mean,BYTE median){
   // %3d means to reserve 3 digits for the value
   printf("The maximum value of the array is:%3d\n",max);
@@ -112,6 +121,7 @@ void print_array(BYTE *array,BYTE length){
   }
   printf("\n");
 }
+#endif
 /* Median number
   if length of array is odd number
   EX : 1 2 3 4 5 6 7
