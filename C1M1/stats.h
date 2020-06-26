@@ -30,7 +30,7 @@ void sort_array(BYTE *array,BYTE length);
 //using selection sort
 //(index 0 = max, index length-1 = min)
 //@output none,will modified array in place
-
+#ifndef __MSP432P401R__
 void print_statistics(BYTE min,BYTE max,BYTE mean, BYTE median);
 //prints the statistics of an array including minimum, maximum, mean, and median
 //@4 params: min, max, mean, median(all BYTE)
@@ -40,7 +40,7 @@ void print_array(BYTE *array,BYTE length);
 //Given an array of data and a length, prints the array to the screen
 //@2 params *array,length (all BYTE)
 //@output print all datas in array[]
-
+#endif
 BYTE find_median(BYTE *d_sorted_array,BYTE length);
 //Given an descended,sorted array of data and a length, returns the median value
 //@2 params: d_sorted_array[],length (all BYTE)
