@@ -17,7 +17,6 @@
  *
  */
 
-#include <stdint.h>
 #include "course1.h"
 #include "platform.h"
 #include "memory.h"
@@ -45,7 +44,6 @@ int8_t test_data1() {
   PRINTF("  Final Decimal number: %d\n", value);
   #endif
   free_words( (uint32_t*)ptr );
-
   if ( value != num )
   {
     return TEST_ERROR;

@@ -20,9 +20,6 @@
  * @date April 1 2017
  *
  */
-#include <stdint.h> // for uint8_t,int32_t
-#include <stddef.h> // for size_t
-#include <stdlib.h>
 #include "memory.h"
 /***********************************************************
  Function Definitions

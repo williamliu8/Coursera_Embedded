@@ -23,6 +23,7 @@
 #define __MEMORY_H__
 #include <stdint.h> // for uint8_t,int32_t
 #include <stddef.h> // for size_t
+#include <stdlib.h>
 /*
   my_memmove
   @brief:
