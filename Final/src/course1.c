@@ -18,11 +18,6 @@
  */
 
 #include "course1.h"
-#include "platform.h"
-#include "memory.h"
-#include "data.h"
-#include "stats.h"
-
 int8_t test_data1() {
   uint8_t * ptr;
   int32_t num = -4096;
@@ -263,7 +258,7 @@ int8_t test_memcopy() {
 int8_t test_memset() 
 {
   uint8_t i;
-  uint8_t ret = TEST_NO_ERROR;
+  int8_t ret = TEST_NO_ERROR;
   uint8_t * set;
   uint8_t * ptra;
   uint8_t * ptrb;
@@ -276,7 +271,6 @@ int8_t test_memset()
   }
   ptra = &set[0];
   ptrb = &set[16];
-
   /* Initialize the set to test values */
   for( i = 0; i < MEM_SET_SIZE_B; i++) 
   {
@@ -320,16 +314,13 @@ int8_t test_reverse()
                                  0x72, 0x75, 0x74, 0x78, 0x21, 0x4D, 0x20, 0x40,
                                  0x20, 0x24, 0x7C, 0x20, 0x24, 0x69, 0x68, 0x54
                                };
-
   PRINTF("test_reverse()\n");
   copy = (uint8_t*)reserve_words(MEM_SET_SIZE_W);
   if (! copy )
   {
     return TEST_ERROR;
   }
-  
   my_memcopy(set, copy, MEM_SET_SIZE_B);
-
   print_array(set, MEM_SET_SIZE_B);
   my_reverse(set, MEM_SET_SIZE_B);
   print_array(set, MEM_SET_SIZE_B);

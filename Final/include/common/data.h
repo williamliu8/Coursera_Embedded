@@ -18,7 +18,7 @@
  */
 #ifndef __DATA_H__
 #define __DATA_H__
-#include <stdint.h> // for uint8_t,int32_t
+#include "course1.h"
 
 /*
   my_itoa
