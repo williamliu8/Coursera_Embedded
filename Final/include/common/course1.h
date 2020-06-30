@@ -19,11 +19,20 @@
 #ifndef __COURSE1_H__
 #define __COURSE1_H__
 
-#include <stdint.h>
+#include <stdint.h> // for uint8_t,int32_t
+#include <stddef.h> // for size_t
+#include <stdlib.h> // for malloc() free()
+#include "course1.h"
+#include "platform.h"
+#include "memory.h"
+#include "data.h"
+#include "stats.h"
+
+#define BYTES_PER_WORD sizeof(size_t) // size_t is a word. If 32bits MCU size_t = 4 bytes, 64bits MCU size_t = 8 bytes.
 
 #define DATA_SET_SIZE_W (10)
 #define MEM_SET_SIZE_B  (32)
-#define MEM_SET_SIZE_W  (8)
+#define MEM_SET_SIZE_W  (MEM_SET_SIZE_B/BYTES_PER_WORD) // automatically calculate # of words by MEM_SET_SIZE_B
 #define MEM_ZERO_LENGTH (16)
 
 #define TEST_MEMMOVE_LENGTH (16)

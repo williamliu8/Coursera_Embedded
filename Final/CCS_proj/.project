@@ -66,6 +66,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/include/common/memory.h</locationURI>
 		</link>
 		<link>
+			<name>msp432p401r.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/include/msp432/msp432p401r.h</locationURI>
+		</link>
+		<link>
 			<name>msp432p401r.lds</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/msp432p401r.lds</locationURI>
@@ -94,6 +99,11 @@
 			<name>system_msp432p401r.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/src/system_msp432p401r.c</locationURI>
+		</link>
+		<link>
+			<name>system_msp432p401r.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/include/msp432/system_msp432p401r.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

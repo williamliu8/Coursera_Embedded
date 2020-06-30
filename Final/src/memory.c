@@ -20,7 +20,7 @@
  * @date April 1 2017
  *
  */
-#include "memory.h"
+#include "course1.h"
 /***********************************************************
  Function Definitions
 ***********************************************************/
@@ -96,7 +96,7 @@ uint8_t * my_reverse(uint8_t * src, size_t length){
 }
 uint32_t * reserve_words(size_t length){
   uint32_t *reserved_pointer;
-  reserved_pointer = malloc(length);
+  reserved_pointer = malloc(length * BYTES_PER_WORD);
   return reserved_pointer;
 }
 void free_words(uint32_t * src){
