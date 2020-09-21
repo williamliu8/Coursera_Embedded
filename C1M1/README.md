@@ -4,17 +4,15 @@ Date:June 10 2020
 
 **Usage:**  
 For Windows CCS + MSP432P401R LaunchPad  
-Remember to DEFINE __MSP432P401R__ in CCS  
-Because no printf function  
-so you have to enter debug mode  
-check result by setting watch point to variables that you want to observe.  
+Remember to DEFINE __MSP432P401R__ in CCS.  
+Because no printf function, so you'll have to enter debug mode check result by setting watch point to variables that you want to observe.  
   
 Under Linux  
 1.Change to C1M1 directory  
-2.$ gcc -o c1m1.out stats.c 
-3.$ ./c1m1.out
+2.$ gcc -o c1m1.out stats.c  
+3.$ ./c1m1.out  
 4.you will see the result  
-  
+
 **Description:**  
 You will create a simple application that performs statistical analytics on a dataset.  
 This assignment will help you get re-oriented with c-programming syntax and host machine compilation.  
